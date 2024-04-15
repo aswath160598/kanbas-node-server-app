@@ -21,7 +21,9 @@ const app = express()
 app.use(
     cors({
       credentials: true,
-      origin: "https://a6--friendly-strudel-2dc5c2.netlify.app",
+      origin: ["https://a6--friendly-strudel-2dc5c2.netlify.app",
+      "https://a5--friendly-strudel-2dc5c2.netlify.app"
+    ]
       // origin: process.env.FRONTEND_URL
     })
    );
