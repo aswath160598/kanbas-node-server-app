@@ -21,7 +21,7 @@ const app = express()
 app.use(
     cors({
       credentials: true,
-      origin: "http://localhost:3000",
+      origin: "https://a6--friendly-strudel-2dc5c2.netlify.app",
       // origin: process.env.FRONTEND_URL
     })
    );
