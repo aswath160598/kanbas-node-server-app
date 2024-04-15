@@ -10,9 +10,9 @@ import UserRoutes from "./Kanbas/users/routes.js";
 import session from "express-session";
 import "dotenv/config";
 
-// mongoose.connect("mongodb+srv://Cluster89442:aXF2Zm56TlRE@cluster89442.0fq4prg.mongodb.net/kanbas");
-const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
-mongoose.connect(CONNECTION_STRING);
+mongoose.connect("mongodb+srv://Cluster89442:aXF2Zm56TlRE@cluster89442.0fq4prg.mongodb.net/kanbas");
+// const CONNECTION_STRING = process.env.DB_CONNECTION_STRING || 'mongodb://127.0.0.1:27017/kanbas'
+// mongoose.connect(CONNECTION_STRING);
 
 
 
@@ -21,8 +21,8 @@ const app = express()
 app.use(
     cors({
       credentials: true,
-      // origin: "http://localhost:3000",
-      origin: process.env.FRONTEND_URL
+      origin: "http://localhost:3000",
+      // origin: process.env.FRONTEND_URL
     })
    );
    
