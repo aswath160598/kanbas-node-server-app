@@ -6,11 +6,11 @@ import enrollments from "./enrollments.js";
 import grades from "./grades.js";
 
 export default{
-  courses,
-  modules,
-  assignments,
-  users,
-  enrollments,
-  grades
+  // courses,
+  // modules,
+  // assignments,
+  // users,
+  // enrollments,
+  // grades
 
 };
