@@ -22,8 +22,8 @@ app.use(
     cors({
       credentials: true,
       origin: ["https://a6--friendly-strudel-2dc5c2.netlify.app",
-      "https://a5--friendly-strudel-2dc5c2.netlify.app"
-    ]
+      "https://a5--friendly-strudel-2dc5c2.netlify.app",
+      "http://localhost:3000"]
       // origin: process.env.FRONTEND_URL
     })
    );
