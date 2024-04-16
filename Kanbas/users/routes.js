@@ -54,15 +54,9 @@ const findUserById = async (req, res) => {
       res.sendStatus(401);
     }
   };
-  // };
-  // const signout = (req, res) => {
-  //   currentUser = null;
-  //   // req.session.destroy();
-  //   res.sendStatus(200);
-  // };
 
   const signout = (req, res) => {
-    currentUser = null;
+    req.session.destroy();
     res.sendStatus(200);
   };
 
